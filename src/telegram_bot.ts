@@ -1,18 +1,22 @@
-import { TelegramBot, UpdateType } from "https://deno.land/x/telegram_bot_api/mod.ts"
-import "https://deno.land/x/dot_env@0.2.0/load.ts"
+import { Bot } from "https://deno.land/x/telegram@v0.1.1/mod.ts";
+import "https://deno.land/x/dotenv/load.ts";
 
-const TOKEN = Deno.env.get("TOKEN");
-if (!TOKEN) throw new Error("Bot token is not provided");
-const bot = new TelegramBot(TOKEN);
+const token = Deno.env.get("TOKEN");
 
-bot.on(UpdateType.Message, async (message: any) => {
+console.log(String(token));
 
-    const text = message.message.text || "I can't hear you";
-    console.log(message)
-    await bot.sendMessage({chat_id: message.message.chat.id, text: `echo ${text}`})
+const bot = new Bot("5084168171:AAFynbkC-112hpy8hmssBcJONjDsCuMZvHI");
 
+bot.on("text", async (ctx) => {
+    const text = ctx.message?.text;
+
+    if (text === "/safety") {
+        await ctx.reply("Ich bin online!");
+    }
+
+    if (text === "/safetyHelp") {
+        await ctx.reply("Ich funktioniere!");
+    }
 });
 
-bot.run({
-    polling: true,
-});
+bot.launch();
