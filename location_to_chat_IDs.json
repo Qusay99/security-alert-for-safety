@@ -1,0 +1,55 @@
+{   
+    "cities": [
+        {
+            "city": "Mannheim",
+            "geo_data": [
+                {
+                    "longitude": "LONG_MANNHEIM",
+                    "latitude": "LAT_MANNHEIM"
+                }
+            ],
+            "chatID": -713194120
+        },
+        {
+            "city": "Berlin",
+            "geo_data": [
+                {
+                    "longitude": "LONG_BERLIN",
+                    "latitude": "LAT_BERLIN"
+                }
+            ],
+            "chatID": -1001574744716
+        },
+        {
+            "city": "München",
+            "geo_data": [
+                {
+                    "longitude": "LONG_MÜNCHEN",
+                    "latitude": "LAT_MÜNCHEN"
+                }
+            ],
+            "chatID": -657046225
+        },
+        {
+            "city": "Hamburg",
+            "geo_data": [
+                {
+                    "longitude": "LONG_HAMBURG",
+                    "latitude": "LAT_HAMBURG"
+                }
+            ],
+            "chatID": -653828809
+        },
+        {
+            "city": "Köln",
+            "geo_data": [
+                {
+                    "longitude": "LONG_KÖLN",
+                    "latitude": "LAT_KÖLN"
+                }
+            ],
+            "chatID": -1001382320486
+        }
+    ]
+
+}       
