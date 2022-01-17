@@ -9,6 +9,16 @@ Planned Features:
   Example: User is in Mannheim and presses button -> Emergency message is sent to "Mannheim Safety-Community" - Group in Telegram
  
 Currently Active Features:
+
+Telegram Bot:
 - bot currently only active in Telegram group "Safety in Mannheim"
 - after writing a message the bot replies with a copy of your message
 - after starting the bot you can type "/safety" or "/safetyHelp" in a chat with that bot...the bot will answer to your command
+
+
+Distance Module:
+
+
+Website:
+
+
