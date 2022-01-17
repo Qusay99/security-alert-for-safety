@@ -8,4 +8,5 @@ Planned Features:
 - Button -> When pressed: automatically send an emergency message to the telegram bot active in the group, that is geographically nearest to the user (using the distance calculator module)
   Example: User is in Mannheim and presses button -> Emergency message is sent to "Mannheim Safety-Community" - Group in Telegram
  
- 
+Currently Active Features:
+- after starting the bot you can type "/safety" or "/safetyHelp" in a chat with that bot...the bot will answer to your command
