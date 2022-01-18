@@ -2,23 +2,20 @@
 User-Stories:
 - As a person at risk I would like to press a button in order to inform my safety community in case of a potentially dangerous situation in order to get help if necessary.
 
-Planned Features:
+## Planned Features:
 - JSON file with telegram group IDs and according geographic information 
 - Telegram Bot that can be invited to group chats
 - Button -> When pressed: automatically send an emergency message to the telegram bot active in the group, that is geographically nearest to the user (using the distance calculator module)
   Example: User is in Mannheim and presses button -> Emergency message is sent to "Mannheim Safety-Community" - Group in Telegram
  
-Currently Active Features:
+## Currently Active Features:
 
-Telegram Bot:
-- bot currently only active in Telegram group "Safety in Mannheim"
-- after writing a message the bot replies with a copy of your message
-- after starting the bot you can type "/safety" or "/safetyHelp" in a chat with that bot...the bot will answer to your command
+### Telegram Bot:
+- you can specify a city in the code...the telegram bot filters the "location_to_chat_id.json" for the according chatID and sends a message to the Telegram group of that city
 
-
-Distance Module:
+### Distance Module:
 
 
-Website:
+### Website:
 
 
