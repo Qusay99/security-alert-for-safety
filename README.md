@@ -12,6 +12,7 @@
 
 ### Telegram Bot:
 - you can specify a city in the code...the telegram bot filters the "location_to_chat_id.json" for the according chatID and sends a message to the Telegram group of that city
+- it's possible to insert a name to the emergency message and to add a custom message by the user that presses the button (still has to be automated)
 
 ### Distance Module:
 
