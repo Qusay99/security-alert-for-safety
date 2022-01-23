@@ -9,5 +9,4 @@
 			<p>Comming soon :)</p>
 		</div>
 	</div>
-
 </div>
