@@ -19,15 +19,18 @@ export class TelegramBotForSafetyMania {
         return data_json
     }
 
-    public static async startBot(custom_message: any, longitude: any, latitude: any, name_of_person="", location: any) {
+    public static async startBot(custom_message: any, latitude: any, longitude: any, name_of_person="", location: any) {
         var bot = this.initializeBot()
         var chatID = ""
     
         var data_json = await this.getJSON().then((response) => {return response});
-        var emergency_message = `${custom_message} \n\n[ACHTUNG GEFAHR]\nEine Person hat auf den Notfall-Knopf gedrückt.\n \nDie Person befindet sich bei folgenden Koordinaten \nLängengrad: ${longitude} / Breitengrad: ${latitude}`
+        var maps_link = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`
+        var emergency_message = `${custom_message} \n\n[ACHTUNG GEFAHR]\nEine Person hat auf den Notfall-Knopf gedrückt.\n \nDie Person befindet sich bei folgenden Koordinaten \nLängengrad: ${longitude} / Breitengrad: ${latitude}
+                                \nSiehe auf Maps: ` + maps_link;
 
         if (name_of_person !== "") {
-            var emergency_message = `${custom_message} \n\n[ACHTUNG GEFAHR]\n${name_of_person} hat auf den Notfall-Knopf gedrückt.\n \nDie Person befindet sich bei folgenden Koordinaten \nLängengrad: ${longitude} / Breitengrad: ${latitude}`
+            var emergency_message = `${custom_message} \n\n[ACHTUNG GEFAHR]\n${name_of_person} hat auf den Notfall-Knopf gedrückt.\n \nDie Person befindet sich bei folgenden Koordinaten \nLängengrad: ${longitude} / Breitengrad: ${latitude}
+                                    \nSiehe auf Maps: ` + maps_link;
         }
         
         for (let prop in data_json) {
