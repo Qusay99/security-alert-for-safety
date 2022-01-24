@@ -8,22 +8,16 @@
 		  <div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 			  <li class="nav-item">
-				<a class="nav-link" aria-current="page" href="#/hello/svelte">Anleitung</a>
+				<a class="nav-link" aria-current="page" href="#/hello/svelte">Instruction</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#/About">Über uns</a>
+				<a class="nav-link" href="#/About">About us</a>
 			  </li>
 			</ul>
 		  </div>
 		</div>
 	  </nav>
 </header>
-<!-- Navigation links -->
-<!-- <ul>
-    <li><a href="#/">Home</a></li>
-    <li><a href="#/wild/card">Wildcard route</a></li>
-    <li><a href="#/does/not/exist">Not found</a></li>
-</ul> -->
 
 <!-- Show the router -->
 <Router {routes} />
