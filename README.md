@@ -1,5 +1,7 @@
 # SafetyMania
-![Logo](/SAFETYMANIA.png "SafetyMania - Logo")
+<p align="center">
+  <img src="/SAFETYMANIA.png" alt="SafetyMania - Logo"/>
+</p>
 
 ## How to use SafetyMania
 
@@ -16,3 +18,9 @@ Hamburg: https://t.me/+jeQRV0Yhh5s1MDdi <br>
 ### Steps on Telegram
 
 ### Configuration of "location_to_chat_ID.json"
+
+
+##Helpful links for further development:
+Create a Svelte App: https://svelte.dev/blog/the-easiest-way-to-get-started
+Svelte-Router: https://github.com/ItalyPaleAle/svelte-spa-router
+Telegram-Bot:
