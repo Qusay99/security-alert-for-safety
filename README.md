@@ -20,7 +20,7 @@ Hamburg: https://t.me/+jeQRV0Yhh5s1MDdi <br>
 ### Configuration of "location_to_chat_ID.json"
 
 
-##Helpful links for further development:
-Create a Svelte App: https://svelte.dev/blog/the-easiest-way-to-get-started
-Svelte-Router: https://github.com/ItalyPaleAle/svelte-spa-router
-Telegram-Bot:
+## Helpful links for further development:
+Create a Svelte App: https://svelte.dev/blog/the-easiest-way-to-get-started <br>
+Svelte-Router: https://github.com/ItalyPaleAle/svelte-spa-router <br>
+Telegram-Bot: <br>
