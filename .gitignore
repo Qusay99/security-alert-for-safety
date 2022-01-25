@@ -4,5 +4,6 @@
 /src/distance_calculator.ts
 
 .DS_Store
+.contributions.md
 
 /src/.env
