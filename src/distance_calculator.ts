@@ -1,51 +1,47 @@
-let distance_to_each_city = [ 
-    {distance: 'distance', city: 'Mannheim'},
-    {distance: 'distance', city: 'Berlin'},
-    {distance: 'distance', city: 'München'},
-    {distance: 'distance', city: 'Hamburg'},
-    {distance: 'distance', city: 'Köln'}
+import { Request } from 'https://deno.land/x/request@1.3.2/mod.ts'
+import { DistanceCalculator } from "https://deno.land/x/distancecalculator/distance-calculator.ts"
 
-]
 
-export class DistanceCalculator {
+//define arrays
 
-    public static getDistanceInKilometers(latitude1: number, longitude1: number, latitude2: number, longitude2: number): number {
-        return DistanceCalculator.getDistance(latitude1, longitude1, latitude2, longitude2) * 1.609344
+export class NearestCityCalculator {
+
+    // retrieve the location_to_chat_IDs.json
+    public static async getCityJSON() {
+        let x = await Request.get('https://raw.githubusercontent.com/Qusay99/security-alert-for-safety/main/location_to_chat_IDs.json');
+        return x
     }
 
-    public static getDistanceInNauticMiles(latitude1: number, longitude1: number, latitude2: number, longitude2: number): number {
-        return DistanceCalculator.getDistance(latitude1, longitude1, latitude2, longitude2) * 0.8684
-    }
+    public static async findNearestCity(userGeo: any) {
+        var citiesgeo: any;
+        var distance: Number;
+        var location: any;
+        var userGeo: any;
 
-    public static getDistanceInLightYears(latitude1: number, longitude1: number, latitude2: number, longitude2: number): number {
-        return DistanceCalculator.getDistance(latitude1, longitude1, latitude2, longitude2) * 1.609344 * 0.00000000000010570
-    }
+        userGeo = userGeo;
+        distance = 1000000000;
+        location = "";
+        citiesgeo = await this.getCityJSON().then((response) => {return response});
 
-    private static getDistance(latitude1: number, longitude1: number, latitude2: number, longitude2: number) {
-        if ((latitude1 === latitude2) && (longitude1 === longitude2)) {
-            return 0
+        for(let prop in citiesgeo){
+            let entry = citiesgeo[prop];
+            if (Object.keys(entry).includes("geo_data")){
+                var x: any;
+                x = Object.values(entry)[1]
+                let long = Object.values(x[0])[0];
+                let lat = Object.values(x[0])[1];
+                let calculated_distance = DistanceCalculator.getDistanceInKilometers(Number(lat), Number(long), userGeo.latitude, userGeo.longitude)
+                if (calculated_distance < distance){
+                    distance = calculated_distance
+                    location = Object.values(entry)[0]
+                    // console.log(location)
+                }
+            }
         }
-        const radlatitude1 = Math.PI * latitude1 / 180
-        const radlatitude2 = Math.PI * latitude2 / 180
-        const theta = longitude1 - longitude2
-        const radtheta = Math.PI * theta / 180
-        let distance = Math.sin(radlatitude1) * Math.sin(radlatitude2) + Math.cos(radlatitude1) * Math.cos(radlatitude2) * Math.cos(radtheta)
-        if (distance > 1) {
-            distance = 1
-        }
-        distance = Math.acos(distance)
-        distance = distance * 180 / Math.PI
-        distance = distance * 60 * 1.1515
-
-        return distance
-
+        return location
     }
-
-    
-    
 }
+import { NearestCityCalculator } from './distance_calculator.ts';
 
-let sorteddistances = distance_to_each_city.sort((first, second) => 0 - (first.distance > second.distance ? -1 : 1));
-    console.log(sorteddistances);
-
-    console.log(distance_to_each_city[0])
+var city =  await NearestCityCalculator.findNearestCity({latitude: 48.137154, longitude: 11.46694})
+console.log(city)
