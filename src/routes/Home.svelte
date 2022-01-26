@@ -1,5 +1,4 @@
 <script>
-	import TelegramBotForSafetyMania from "./../telegram_bot.ts"
 	let name = ""
 
 	const handleInput = (e) => {
