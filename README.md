@@ -9,7 +9,7 @@
 
 München: https://t.me/+GnzphUK1S5FhMjMy <br>
 Berlin: https://t.me/+2zXFVfShHdQ4OWNi <br>
-Mannheim: <br>
+Mannheim: https://t.me/+4d7VemcUgUdmMjcy <br>
 Köln: https://t.me/+9iVs_9bWXE5lYzIy <br>
 Hamburg: https://t.me/+jeQRV0Yhh5s1MDdi <br>
 
