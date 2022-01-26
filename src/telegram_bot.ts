@@ -26,11 +26,11 @@ export class TelegramBotForSafetyMania {
         var data_json = await this.getJSON().then((response) => {return response});
         var maps_link = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`
         var emergency_message = `${custom_message} \n\n[ACHTUNG GEFAHR]\nEine Person hat auf den Notfall-Knopf gedrückt.\n \nDie Person befindet sich bei folgenden Koordinaten \nLängengrad: ${longitude} / Breitengrad: ${latitude}
-                                \nSiehe auf Maps: ` + maps_link;
+                                \nSiehe auf Maps:\n` + maps_link;
 
         if (name_of_person !== "") {
             var emergency_message = `${custom_message} \n\n[ACHTUNG GEFAHR]\n${name_of_person} hat auf den Notfall-Knopf gedrückt.\n \nDie Person befindet sich bei folgenden Koordinaten \nLängengrad: ${longitude} / Breitengrad: ${latitude}
-                                    \nSiehe auf Maps: ` + maps_link;
+                                    \nSiehe auf Maps:\n` + maps_link;
         }
         
         for (let prop in data_json) {
