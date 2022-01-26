@@ -1,7 +1,5 @@
 /node_modules/
 /public/build/
-/src/test.ts
-/src/distance_calculator.ts
 
 .DS_Store
 contributions.md
