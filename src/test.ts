@@ -9,4 +9,4 @@ const userGeo = {
 const name_of_person = ""
 const custom_message = "CUSTOM MESSAGE"
 var city =  await NearestCityCalculator.findNearestCity(userGeo)
-TelegramBotForSafetyMania.startBot(custom_message, userGeo.latitude, userGeo.longitude, name_of_person, city)
+TelegramBotForSafetyMania.startBot(userGeo.latitude, userGeo.longitude, name_of_person, city)

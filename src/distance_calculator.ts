@@ -41,7 +41,7 @@ export class NearestCityCalculator {
         return location
     }
 }
-import { NearestCityCalculator } from './distance_calculator.ts';
+// import { NearestCityCalculator } from './distance_calculator.ts';
 
-var city =  await NearestCityCalculator.findNearestCity({latitude: 48.137154, longitude: 11.46694})
-console.log(city)
+// var city =  await NearestCityCalculator.findNearestCity({latitude: 48.137154, longitude: 11.46694})
+// console.log(city)
