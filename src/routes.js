@@ -1,6 +1,7 @@
 // Components
 import Home from './routes/Home.svelte'
 import About from './routes/About.svelte'
+import Instruction from './routes/instruction.svelte'
 import NotFound from './routes/NotFound.svelte'
 
 // Export the route definition object
@@ -12,6 +13,9 @@ export default {
     // Included twice to match both `/About` (and nothing after) and `/About/*` (with anything after)   
     '/About': About,
     '/About/*': About,
+
+    '/Instruction': Instruction,
+    '/Instruction/*': Instruction,
 
     // Catch-all, must be last
     '*': NotFound,
