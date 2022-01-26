@@ -40,7 +40,7 @@ export class TelegramBotForSafetyMania {
             }
         }
 
-        bot.sendMessage({chat_id: chatID, text: `${emergency_message} \n\n\n\n(Disclaimer: This is an automatically generated Test-Message by SafetyBot ${location})\n\nFor more information visit https://github.com/Qusay99/security-alert-for-safety!`})
+        bot.sendMessage({chat_id: chatID, text: `${emergency_message} \n\n(Disclaimer: This is an automatically generated Test-Message by SafetyBot ${location})\n\nFor more information visit https://github.com/Qusay99/security-alert-for-safety!`})
 
     bot.run({
         polling: true,
