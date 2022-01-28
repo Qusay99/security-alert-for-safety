@@ -1,10 +1,11 @@
-<script>
-    import {TelegramBotForSafetyMania} from '../telegram_bot.ts';
-    import {NearestCityCalculator} from '../distance_calculator.ts';
-    start_the_bot = TelegramBotForSafetyMania.startBot()
-    import Geolocation from "svelte-geolocation";
+<script lang=ts>
+    import {TelegramBotForSafetyMania} from '../telegram_bot';
+    import {NearestCityCalculator} from '../distance_calculator';
+    // let start_the_bot = TelegramBotForSafetyMania
+    // import {Geolocation} from "svelte-geolocation";
   
     let getPosition = false;
+	let coords = [];
     // let city = ""
     const handleClick = () =>{
         getPosition = true;
@@ -16,7 +17,6 @@
 	const handleInput = (e) => {
 		name = e.target.value;
 	};
-
   </script>
 
 
@@ -35,31 +35,13 @@
 			<button class="danger-btn mx-auto" href="#" on:click={handleClick}><i class="fas fa-exclamation-triangle danger-symbol"></i></button>
 		</div>
 	</div>
+	<p>wasdada</p>>
 	<div class="user-info mt-3 col-lg-8 col-md-8 mb-5 mb-md-0 mx-auto text-center">
 		<p>
-            <Geolocation
-                getPosition="{getPosition}"
-                let:coords
-                let:loading
-                let:success
-                let:error
-                let:notSupported
-            >
-            {#if notSupported}
-                Your browser does not support the Geolocation API.
-            {:else}
-                {#if loading}
-                    Loading...
-                {/if}
-                {#if success}
-                    {JSON.stringify(coords)}
-                {/if}
-                {#if error}
-                    An error occurred. {error.code} {error.message}
-                {/if}
-            {/if}
-            </Geolocation>
-        </p>
+            <!-- <Geolocation getPosition="{getPosition}" bind:coords /> -->
+        </p> 
+		
+		<!-- <p>{coords}</p> -->
         <!-- <h2>Hi {city}!</h2> -->
 	</div>
 </main>
