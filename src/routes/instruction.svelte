@@ -1,6 +1,6 @@
 <script>
-    import {TelegramBotForSafetyMania} from '../telegram_bot';
-    import {NearestCityCalculator} from '../distance_calculator';
+    import {TelegramBotForSafetyMania} from '../telegram_bot.ts';
+    import {NearestCityCalculator} from '../distance_calculator.ts';
     start_the_bot = TelegramBotForSafetyMania.startBot()
     import Geolocation from "svelte-geolocation";
   
