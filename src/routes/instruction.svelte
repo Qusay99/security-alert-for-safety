@@ -1,19 +1,21 @@
 <script lang=ts>
-    import {TelegramBotForSafetyMania} from '../telegram_bot';
+    // import {TelegramBotForSafetyMania} from '../telegram_bot';
     import {NearestCityCalculator} from '../distance_calculator';
+	import {TestClassImport} from '../test-import'
     // let start_the_bot = TelegramBotForSafetyMania
-    // import {Geolocation} from "svelte-geolocation";
-  
+
+    import Geolocation from "svelte-geolocation"
+	// let userCity = NearestCityCalculator.findNearestCity([49.4719058, 8.4852408]);
+	let testImport = TestClassImport.findNearestCity()
+
     let getPosition = false;
 	let coords = [];
-    // let city = ""
+
+
     const handleClick = () =>{
-        getPosition = true;
-        // city = NearestCityCalculator.findNearestCity(coords)
+        getPosition = true; 
     }
-
     let name = ""
-
 	const handleInput = (e) => {
 		name = e.target.value;
 	};
@@ -35,14 +37,21 @@
 			<button class="danger-btn mx-auto" href="#" on:click={handleClick}><i class="fas fa-exclamation-triangle danger-symbol"></i></button>
 		</div>
 	</div>
-	<p>wasdada</p>>
+	<p>wasdada</p>
 	<div class="user-info mt-3 col-lg-8 col-md-8 mb-5 mb-md-0 mx-auto text-center">
 		<p>
-            <!-- <Geolocation getPosition="{getPosition}" bind:coords /> -->
-        </p> 
+            
+			<Geolocation getPosition="{getPosition}" bind:coords />
+			<!-- {#await userCity}
+				<p>waiting</p>
+			{:then city}
+				<p>city</p>
+			{/await} -->
+		</p> 
+        
 		
-		<!-- <p>{coords}</p> -->
-        <!-- <h2>Hi {city}!</h2> -->
+		<p>Your current position {coords}</p> 
+        <!-- <p>the nearest city to your current position is {city}</p>  -->
 	</div>
 </main>
 
