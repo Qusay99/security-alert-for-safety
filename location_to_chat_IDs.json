@@ -1,56 +1,54 @@
-{"dataList":
-    [
-        {
-            "city": "Mannheim",
-            "geo_data": [
-                {
-                    "longitude": 8.469167,
-                    "latitude": 49.488888
-                    
-                }
-            ],
-            "chatID": -713194120
-        },
-        {
-            "city": "Berlin",
-            "geo_data": [
-                {
-                    "longitude": 13.404954,
-                    "latitude": 52.520008
-                }
-            ],
-            "chatID": -1001574744716
-        },
-        {
-            "city": "München",
-            "geo_data": [
-                {
-                    "longitude": 11.576124,
-                    "latitude": 48.137154
-                }
-            ],
-            "chatID": -657046225
-        },
-        {
-            "city": "Hamburg",
-            "geo_data": [
-                {
-                    "longitude": 53.551086,
-                    "latitude": 9.993682
-                }
-            ],
-            "chatID": -653828809
-        },
-        {
-            "city": "Köln",
-            "geo_data": [
-                {
-                    "longitude": 50.935173,
-                    "latitude": 6.953101
-                }
-            ],
-            "chatID": -1001382320486
-        }
-    ]
+[
+    {
+        "city": "Mannheim",
+        "geo_data": [
+            {
+                "longitude": 8.469167,
+                "latitude": 49.488888
+                
+            }
+        ],
+        "chatID": -713194120
+    },
+    {
+        "city": "Berlin",
+        "geo_data": [
+            {
+                "longitude": 13.404954,
+                "latitude": 52.520008
+            }
+        ],
+        "chatID": -1001574744716
+    },
+    {
+        "city": "München",
+        "geo_data": [
+            {
+                "longitude": 11.576124,
+                "latitude": 48.137154
+            }
+        ],
+        "chatID": -657046225
+    },
+    {
+        "city": "Hamburg",
+        "geo_data": [
+            {
+                "longitude": 53.551086,
+                "latitude": 9.993682
+            }
+        ],
+        "chatID": -653828809
+    },
+    {
+        "city": "Köln",
+        "geo_data": [
+            {
+                "longitude": 50.935173,
+                "latitude": 6.953101
+            }
+        ],
+        "chatID": -1001382320486
+    }
+]
   
-}
