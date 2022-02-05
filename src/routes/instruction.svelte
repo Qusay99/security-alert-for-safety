@@ -1,4 +1,4 @@
-<script lang=ts>
+<script lang="ts">
     // import {TelegramBotForSafetyMania} from '../telegram_bot';
     import {NearestCityCalculator} from '../distance_calculator';
 	import {TestClassImport} from '../test-import'
