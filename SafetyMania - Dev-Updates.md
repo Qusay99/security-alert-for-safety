@@ -8,9 +8,12 @@
  
 ## Currently Active Features:
 
-### Telegram Bot:
-- you can specify a city in the code...the telegram bot filters the "location_to_chat_id.json" for the according chatID and sends a message to the Telegram group of that city
-- it's possible to insert a name to the emergency message and to add a custom message by the user that presses the button (still has to be automated)
+### Telegram Bot (Niklas Koch):
+- after Telegrambot gets started, the bot is initialized with the Token in the .env
+- getJSON() method returns the current "location_to_chat_ID.json" in the git repository. This contains the location, its coordinates and chatID of the according Telegram group
+- After starting the bot (with parameters for user location, coordinates and eventually name of the user) a link for google maps is created.
+- The bot generates an emergency message.
+- Now the bot filters the JSON for the according chatID and sends the message to the according Telegram group.
 
 ### Distance Module:
 
