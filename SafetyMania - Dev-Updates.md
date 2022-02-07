@@ -29,5 +29,10 @@
 
 
 ### Website:
-
-
+- The website application was built with Svelte framework.
+- The web application consists of 3 pages:
+  - **Home**: On this site, the user is able to find the danger button and a name field where he can enter his name if he wants his name to be sent with the danger message to the telegram group
+  - **About us**: On this site, the user is able to find some information about the contributors respectively the idea behind the project.
+  - **Instruction**: On this site, the user is able to find the information needed to understand how the web application works respectively how he can use it.
+- In the source code of the Home.Svelte component, the functions `getlocation()`, `showPosition()` and `showError()` are responsible for getting the location of the user. The location will be returned as a list of two components (latitude and longitude) which will be passed to the `NearestCityCalculator` module.
+- In the source code of the Home.Svelte component, the JSON file of the cities locations' will also be imported by the `fetch()` method to pass it to the `NearestCityCalculator` with the user coordinates.
