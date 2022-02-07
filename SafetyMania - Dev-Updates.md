@@ -16,6 +16,16 @@
 - Now the bot filters the JSON for the according chatID and sends the message to the according Telegram group.
 
 ### Distance Module:
+- Distance Module is able to calculate the Distance between a live location and several cities and chooses the city with the smallest distance
+- The class "NearestCityCalculator" includes the "findnearestcity" function which:
+- takes the geo data of a city (which is written down in "location_to_chat_ID.json") by using the "DistanceCalculator" module 
+- It calculates the distance to the "userGeo" (the live location of the user)
+- The function includes a for loop, so that it will be calculated for each city written down in the JSON file
+- Every time, the calculated distance is smaller than the previous city, the "location" variable will be overwritten
+- At the end of the for loop we get the nearest city to the users geo data in the "location" variable 
+- The value of "location" will be used for the telegram bot to find the chatID of the target telegram group
+- The distance calculator module is currently working. Problem: Using the Class "NearesCityClculator" in Svelte causes error by importing the JSON file
+-> import is commented and will be importet in Svelte directly
 
 
 ### Website:
