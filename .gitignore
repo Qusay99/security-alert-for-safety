@@ -6,4 +6,4 @@ contributions.md
 SafetyMania - Dev-Updates.md
 /src/.env
 src/distance_calculator.ts
-.gitignore
+# .gitignore

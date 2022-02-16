@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@types/request": "^2.48.8",
+    "deployment": "^0.2.3",
     "sirv-cli": "^2.0.0",
     "svelte-spa-router": "^3.2.0"
   }
