@@ -5,7 +5,7 @@
 
 ## How to use SafetyMania
 #### Web-Application:
-you can find the pre-release of our site under the following link:
+you can find the pre-release of our web application under the following link:
 https://qusay99.github.io/security-alert-for-safety/
 
 ***Please note*** that the application is still in development and that the main function does not work yet. When you press the button now, you will get your current position (permission required!). However, the used modules work if you would like to test them without the graphical interface. We're currently working on fixing the issue of importing deno modules to our snel/svelt project.
