@@ -23,7 +23,7 @@ export class TelegramBotForSafetyMania {
         var bot = this.initializeBot()
         var chatID = ""
     
-        var data_json = await this.getJSON().then((response) => {return response});
+        var data_json = await TelegramBotForSafetyMania.getJSON().then((response) => {return response});
         var maps_link = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`
         var emergency_message = `\n\n[ACHTUNG GEFAHR]\nEine Person hat auf den Notfall-Knopf gedrückt.\n \nDie Person befindet sich bei folgenden Koordinaten \nLängengrad: ${longitude} / Breitengrad: ${latitude}
                                 \nSiehe auf Maps:\n` + maps_link;
