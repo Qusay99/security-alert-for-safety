@@ -37,7 +37,6 @@
 			<button class="danger-btn mx-auto" href="#" on:click={handleClick}><i class="fas fa-exclamation-triangle danger-symbol"></i></button>
 		</div>
 	</div>
-	<p>wasdada</p>
 	<div class="user-info mt-3 col-lg-8 col-md-8 mb-5 mb-md-0 mx-auto text-center">
 		<p>
             
