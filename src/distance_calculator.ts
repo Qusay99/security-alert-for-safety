@@ -14,9 +14,8 @@ export class NearestCityCalculator {
 
     public static async findNearestCity(userGeo: any) {
         var citiesgeo: any;
-        var distance: Number;
-        var location: any;
-        var userGeo: any;
+        var distance: number;
+        var location: unknown;
 
         userGeo = userGeo;
         distance = 1000000000;
