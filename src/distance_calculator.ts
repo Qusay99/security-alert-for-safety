@@ -22,7 +22,7 @@ export class NearestCityCalculator {
         userGeo = userGeo;
         distance = 1000000000;
         location = "";
-        citiesgeo = await this.getCityJSON().then((response) => {return response});
+        citiesgeo = await NearestCityCalculator.getCityJSON().then((response) => {return response});
 
         for(let prop in citiesgeo){
             let entry = citiesgeo[prop];
