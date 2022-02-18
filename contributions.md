@@ -8,3 +8,6 @@ This module can be extended easily by other users, e.g. to include currencies, s
 Deno: https://deno.land/x/unit_converter
 
 Github: https://github.com/NamelessW0lf/unit-converter
+
+
+## Contributions Qusay Hamid (Matr: )
