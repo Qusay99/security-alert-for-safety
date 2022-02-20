@@ -1,0 +1,8 @@
+/node_modules
+/public/dist/
+.DS_Store
+/dist
+
+contributions.md
+SafetyMania - Dev-Updates.md
+
