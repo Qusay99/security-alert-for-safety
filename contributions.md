@@ -10,4 +10,8 @@ Deno: https://deno.land/x/unit_converter
 Github: https://github.com/NamelessW0lf/unit-converter
 
 
-## Contributions Qusay Hamid (Matr: )
+## Contributions Qusay Hamid (Matr: 9886297)
+### Geometry Calculator: https://deno.land/x/geometry_calculator@v1.0.3
+### Svelte-TypeScript-Template: https://github.com/Qusay99/Svelte-TypeScript-Template
+### graphical geometry calculator: https://github.com/Qusay99/graphical-GeometryCalculator
+
