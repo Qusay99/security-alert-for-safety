@@ -9,6 +9,14 @@ you can find the pre-release of our web application under the following link:
 https://qusay99.github.io/security-alert-for-safety/
 
 ### ***Please note:*** The latest version of the application has not yet been deployed!
+If you want to use the latest version, you have to download this repository and open the terminal in the root folder of the project's folder.
+Then you have to run the following command:
+
+````
+trex run start
+````
+
+If you want to create your own SafetyCommunity please read this [instruction](https://github.com/Qusay99/security-alert-for-safety/edit/main/README.md#how-to-create-your-own-safetycommunity)
 
 #### Telegram-Groups:
 
