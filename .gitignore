@@ -1,9 +1,0 @@
-/node_modules/
-# /public/build/
-
-.DS_Store
-contributions.md
-SafetyMania - Dev-Updates.md
-/src/.env
-src/distance_calculator.ts
-# .gitignore
