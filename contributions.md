@@ -1,3 +1,5 @@
+## Contributions Amina Uicker-Darwish (Matr: 8278962)
+
 ## Contributions Niklas Koch (Matr: 6699912)
 
 ### Unit-Converter-Module (Temperature, Distance, Weight)
