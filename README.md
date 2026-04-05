@@ -20,11 +20,11 @@ If you want to create your own SafetyCommunity please read this [instruction](ht
 
 #### Telegram-Groups:
 
-München: https://t.me/+GnzphUK1S5FhMjMy <br>
-Berlin: https://t.me/+2zXFVfShHdQ4OWNi <br>
-Mannheim: https://t.me/+4d7VemcUgUdmMjcy <br>
-Köln: https://t.me/+9iVs_9bWXE5lYzIy <br>
-Hamburg: https://t.me/+jeQRV0Yhh5s1MDdi <br>
+München: <br>
+Berlin:  <br>
+Mannheim: <br>
+Köln:  <br>
+Hamburg: <br>
 
 ## How to create your own SafetyCommunity
 
